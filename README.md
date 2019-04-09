@@ -1,3 +1,5 @@
+The task is to create a visual studio solution which performs basic CRUD operations on a user list within two WPF views.
+
 Requires nuget packages:-
 -LiveCharts
 -LiveCharts.Geared
