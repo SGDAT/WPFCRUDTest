@@ -1,0 +1,32 @@
+﻿<Window x:Class="CRUDTest.ViewUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUDTest"
+        mc:Ignorable="d"
+        Title="View User" Height="301.2" Width="402.4"
+        >
+    <Grid DataContext="{Binding user}">
+        <TextBlock HorizontalAlignment="Left" Margin="17,15,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top" Width="88"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Margin="108,15,0,0" TextWrapping="Wrap" Text="{Binding Path=firstName}" VerticalAlignment="Top" Width="176"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,36,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top" Width="82"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="108,36,0,0" TextWrapping="Wrap" Text="{Binding Path=lastName}" VerticalAlignment="Top" Width="176"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,57,0,0" TextWrapping="Wrap" Text="Department" VerticalAlignment="Top" Width="93"/>
+        <TextBox x:Name="txtDepartment" HorizontalAlignment="Left" Margin="108,57,0,0" TextWrapping="Wrap" Text="{Binding Path=department}" VerticalAlignment="Top" Width="176"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="16"><Run Text="Address1"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="txtAddress1" HorizontalAlignment="Left" Margin="108,78,0,0" TextWrapping="Wrap" Text="{Binding Path=address1}" VerticalAlignment="Top" Width="176"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="16"><Run Text="Address2"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="txtAddress2" HorizontalAlignment="Left" Margin="108,99,0,0" TextWrapping="Wrap" Text="{Binding Path=address2}" VerticalAlignment="Top" Width="176"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" Height="16"><Run Text="Address3"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="txtAddress3" HorizontalAlignment="Left" Margin="108,120,0,0" TextWrapping="Wrap" Text="{Binding Path=address3}" VerticalAlignment="Top" Width="176"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,141,0,0" TextWrapping="Wrap" Text="Town:" VerticalAlignment="Top" Width="44"/>
+        <TextBox x:Name="txtTown" HorizontalAlignment="Left" Margin="108,141,0,0" TextWrapping="Wrap" Text="{Binding Path=town}" VerticalAlignment="Top" Width="176"/>
+        <TextBlock HorizontalAlignment="Left" Margin="17,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"><Run Text="Post Code"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="txtPostCode" HorizontalAlignment="Left" Margin="108,162,0,0" TextWrapping="Wrap" Text="{Binding Path=postCode}" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="311,241,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="17,241,0,0" VerticalAlignment="Top" Width="75" Click="btnDelete_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="231,241,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+
+    </Grid>
+</Window>
